@@ -1,0 +1,116 @@
+Target Brazil E commerce SQL Case Study (2016–2018)
+1. Project Overview
+This project analyzes Target’s e commerce operations in Brazil between 2016 and 2018 using SQL. The objective is to extract business insights related to customer behavior, order trends, revenue movement, logistics performance, and payment patterns, and translate them into actionable recommendations.
+________________________________________
+2. Business Objectives
+•	Understand customer distribution and ordering behavior across Brazil
+•	Identify time based trends and seasonality in orders
+•	Analyze revenue, freight cost, and delivery efficiency
+•	Evaluate payment behavior and financial risk
+•	Provide strategic, data driven recommendations
+________________________________________
+3. Dataset & Schema
+Tables Used
+•	customers
+•	orders
+•	order_items
+•	payments
+•	products
+•	sellers
+•	reviews
+•	geolocation
+Key Notes
+•	Analysis is primarily at state and time level
+•	Geolocation table is used only for location-based or distance analysis, not for state-level aggregation
+________________________________________
+4. Analysis Sections & SQL Tasks
+4.1 Initial Data Exploration
+Objective: Understand data structure and coverage
+SQL Tasks:
+•	Inspect column data types (customers table)
+•	Identify order date range
+•	Count distinct customer cities and states
+Business Insight:
+•	Orders span from 2016 to 2018
+•	Customer presence across most Brazilian states, heavily skewed toward São Paulo (SP)
+________________________________________
+4.2 Order Trend & Seasonality Analysis
+Objective: Understand how demand changes over time
+SQL Tasks:
+•	Year wise order growth
+•	Month on month order trends
+•	Time of day segmentation (Dawn / Morning / Afternoon / Night)
+Key Findings:
+•	Overall upward trend in number of orders
+•	Peak demand observed in May, July, and August
+•	Majority of orders placed in Afternoon and Night
+________________________________________
+4.3 Customer & Market Distribution
+Objective: Evaluate market penetration
+SQL Tasks:
+•	Distribution of customers across states
+•	Month on month orders per state
+Key Findings:
+•	São Paulo (SP) dominates customer base (~41K customers)
+•	Other states show significantly lower engagement
+Business Interpretation:
+•	Over dependence on SP market
+•	Large untapped potential in low order states
+________________________________________
+4.4 Revenue & Economic Impact Analysis
+Objective: Analyze money flow
+SQL Tasks:
+•	Total and average order value per state
+•	Freight cost analysis per state
+•	% increase in order cost from 2017 → 2018 (Jan–Aug)
+Key Findings:
+•	Revenue growth aligned with increasing order volume
+•	Freight cost contributes significantly to total order value
+________________________________________
+4.5 Logistics & Delivery Performance
+Objective: Evaluate delivery efficiency
+SQL Tasks:
+•	Actual delivery time calculation
+•	Difference between estimated and actual delivery
+•	States with fastest & slowest deliveries
+•	States where delivery is faster than estimate
+Key Findings:
+•	Average delivery delay difference ≈ 0.1 days (very efficient)
+•	High service quality but increased freight cost
+________________________________________
+4.6 Payment Behavior Analysis
+Objective: Assess financial risk and customer preference
+SQL Tasks:
+•	Month on month orders by payment type
+•	Orders by number of installments
+Key Findings:
+•	Extremely low payment gap relative to total revenue
+•	Installment based payments widely used
+Business Insight:
+•	Low financial risk
+•	Strong customer trust in platform
+________________________________________
+5. Key Business Insights
+•	Strong growth trajectory in Brazilian e commerce demand
+•	Seasonal demand not fully leveraged
+•	Heavy dependence on São Paulo market
+•	Excellent delivery performance at high freight cost
+•	Payment system is robust and low risk
+________________________________________
+6. Actionable Recommendations
+Inventory & Sales Strategy
+•	Align inventory with seasonal demand patterns
+•	Use off season sales for stock clearance (FIFO/LIFO discipline)
+Marketing & Growth
+•	Increase advertising and promotions in low performing states
+•	Design time based offers (Afternoon vs Night shoppers)
+Logistics Optimization
+•	Invest in regional warehouses to reduce freight cost
+•	Balance delivery speed with operational cost efficiency
+Market Expansion
+•	Reduce over reliance on São Paulo
+•	Strengthen presence in emerging states through localized campaigns
+________________________________________
+7. Conclusion
+This SQL project demonstrates how structured data analysis can translate raw transactional data into strategic business decisions. By addressing seasonality gaps, logistics cost, and market imbalance, Target can significantly improve profitability and customer reach in Brazil.
+
